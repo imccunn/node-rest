@@ -1,11 +1,11 @@
 'use strict';
 
-var app = require('./lib/server');
+var appServer = require('./lib/server');
 
-app.define();
+appServer.createDataDir();
 
-app.addResource('things');
-app.addResource('neatThings');
+appServer.addResource('things');
+appServer.addResource('neatThings');
 
-app.start(3333);
+appServer.start(3333);
 
