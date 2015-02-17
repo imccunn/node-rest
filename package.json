@@ -1,0 +1,32 @@
+{
+  "name": "node-rest",
+  "version": "0.1.0",
+  "description": "A simple ReST framework in vanilla node.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcfun/node-rest.git"
+  },
+  "author": "Ian McCunn <ianmccunn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcfun/node-rest/issues"
+  },
+  "homepage": "https://github.com/mcfun/node-rest",
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-jscs": "^1.5.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "mocha": "^2.1.0"
+  }
+}
