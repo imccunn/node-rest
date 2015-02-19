@@ -9,3 +9,4 @@ appServer.addResource('neatThings');
 
 appServer.start(3333);
 
+module.exports = appServer;
