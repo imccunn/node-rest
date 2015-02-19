@@ -14,7 +14,7 @@ describe('Resource 1 should handle requests of all types', function() {
 	var postData = {a: 1, b: 2, c: 3, d: 4, e: 5};
 	var server = 'localhost:3333';
 	// post 1
-	it('should post resource 1', function(done) {
+	it('(post request) should create resource 1', function(done) {
 		chai.request(server)
 			.post('/test1')
 			.send(postData)
@@ -26,7 +26,7 @@ describe('Resource 1 should handle requests of all types', function() {
 			});
 	});
 	// post 2
-	it('should post resource 2', function(done) {
+	it('(post request) should create resource 2', function(done) {
 		chai.request(server)
 			.post('/test1')
 			.send(postData)
@@ -38,7 +38,7 @@ describe('Resource 1 should handle requests of all types', function() {
 			});
 	});
 	// post 3
-	it('should post resource 3', function(done) {
+	it('(post request) should create resource 3', function(done) {
 		chai.request(server)
 			.post('/test1')
 			.send(postData)
@@ -158,8 +158,12 @@ describe('Resource 1 should handle requests of all types', function() {
 	});
 
 	after(function() {
-		fs.rmdir('./data', function(err) {
-			if (err) return err;
+		fs.unlinkSync('./data/test1/data1.json');
+		fs.unlinkSync('./data/test1/data3.json');
+		fs.rmdirSync('./data/test1');
+		fs.rmdirSync('./data/test2');
+		fs.rmdirSync('./data', function(err) {
+			if (err) {throw err;}
 		});
 	});
 });
