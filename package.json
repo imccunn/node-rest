@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcfun/node-rest.git"
+    "url": "https://github.com/imccunn/node-rest.git"
   },
   "author": "Ian McCunn <ianmccunn@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mcfun/node-rest/issues"
+    "url": "https://github.com/imccunn/node-rest/issues"
   },
-  "homepage": "https://github.com/mcfun/node-rest",
+  "homepage": "https://github.com/imccunn/node-rest",
   "devDependencies": {
     "chai": "^2.0.0",
     "chai-http": "^1.0.0",
