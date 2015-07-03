@@ -13,6 +13,7 @@ describe('Resource 1 should handle requests of all types', function() {
 
   var postData = {a: 1, b: 2, c: 3, d: 4, e: 5};
   var server = 'localhost:3333';
+
   // post 1
   it('(post request) should create resource 1', function(done) {
     chai.request(server)
@@ -25,6 +26,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // post 2
   it('(post request) should create resource 2', function(done) {
     chai.request(server)
@@ -37,6 +39,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // post 3
   it('(post request) should create resource 3', function(done) {
     chai.request(server)
@@ -49,6 +52,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // get 1
   it('(get request) should retrieve data from file on server and send back as application/json.', function(done) {
     chai.request(server)
@@ -60,6 +64,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // get 2
   it('(get request) should retrieve data from file on server and send back as application/json.', function(done) {
     chai.request(server)
@@ -86,6 +91,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // patch 3
   it('(patch request) should replace any with resource or add new data.', function(done) {
     var sendData = {a: 22, b: 33, f: 12, s: 99};
@@ -101,6 +107,7 @@ describe('Resource 1 should handle requests of all types', function() {
         done();
       });
   });
+
   // delete 2
   it('(delete request) should delete the requested resource.', function(done) {
     chai.request(server)
